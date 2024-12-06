@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            amarelo:'#E6C744',
+                            cinza:'#C2C8DA',
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="px-[100px] pt-[35px] mb-[52px]">
+            <nav class="flex items-center justify-between">
+                <img src="imgs/logo.png" alt="logo fashion" class="">
+                <ul class="flex gap-[65px] items-center">
+                    <li><a href="" class="hover:text-amarelo">Catalogue</a></li>
+                    <li><a href="" class="hover:text-amarelo">Fashion</a></li>
+                    <li><a href="" class="hover:text-amarelo">Favourite</a></li>
+                    <li><a href="" class="hover:text-amarelo">Lifestyle</a></li>
+                    <li><a href="" class="hover:text-amarelo bg-black text-white p-4 rounded-[7px]">Sing up</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
