@@ -1,115 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            amarelo:'#E6C744',
-                            cinza:'#C2C8DA',
-                        },
-                        screens: {
-                            '3xl':'1920px'
-                        },
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amarelo: '#e6c744',
+                        cinza: '#c2c8da'
+                    },
+                    screens: {
+                        '3xl': '1920px'
                     }
                 }
             }
-        </script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <style>
-            *{
-                font-family: "Poppins", serif;
-            }
-        </style>
-    </head>
-    <body>
-        <header class="px-[100px] pt-[35px] mb-[52px]">
-            <nav class="flex items-center justify-between">
-                <img src="IMGS/Frame 57.png" alt="logo fashion" class="">
-                <ul class="flex gap-[65px] items-center bg-amarelo fixed w-8/12 h-screen top-0 left-0 hidden lg:bg-transparent lg:relative lg:w-auto lg:h-auto lg:flex lg:items-center lg:gap-[65px] *:uppercase *:duration-200">
-                    <li><a href="" class="hover:text-amarelo uppercase 3xl:text-[22px] duration-200">Catalogue</a></li>
-                    <li><a href="" class="hover:text-amarelo uppercase 3xl:text-[22px] duration-200">Fashion</a></li>
-                    <li><a href="" class="hover:text-amarelo uppercase 3xl:text-[22px] duration-200">Favourite</a></li>
-                    <li><a href="" class="hover:text-amarelo uppercase 3xl:text-[22px] duration-200">Lifestyle</a></li>
-                    <li><a href="" class="hover:text-amarelo uppercase 3xl:text-[22px] duration-200 bg-black text-white leading-[62px] block px-[22px] rounded-[7px] hover:bg-gray-800">Sing up</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="banners" class="lg:px-[100px] lg:pt-[52px] px-3 pt-4">
-                <img 
-                src="IMGS/banner.png" 
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Shopping app</title>
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="pt-[35px] px-[100px]">
+        <nav class="flex items-center justify-between">
+            <img src="imgs/logo.png" alt="logo do shopping app">
+            <ul class="bg-amarelo fixed w-8/12 h-screen top-0 left-0 hidden lg:bg-transparent lg:relative lg:w-auto lg:h-auto lg:flex lg:items-center lg:gap-[65px] *:uppercase *:duration-200">
+                <li><a href="" class="3xl:text-[22px] hover:text-amarelo">Catalogue</a></li>
+                <li><a href="" class="3xl:text-[22px] hover:text-amarelo">Fashion</a></li>
+                <li><a href="" class="3xl:text-[22px] hover:text-amarelo">Favorite</a></li>
+                <li><a href="" class="3xl:text-[22px] hover:text-amarelo">Lifestyle</a></li>
+                <li><a href="" class="3xl:text-[22px] hover:text-amarelo bg-black text-white leading-[62px] block px-[22px] rounded-md">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section 
+            id="banners" 
+            class="px-3 pt-4 lg:px-[100px] lg:pt-[52px]"
+        >
+            <img 
+                src="imgs/banner.png" 
                 alt="mulher feliz"
-                class="w-full">
-            </section>
+                class="w-full"
+            >
+        </section>
 
-            <section id="marcas" class=" bg-amarelo mt-4 lg:mt-[60px]">
-                    <div class="flex items-center overflow-x-auto px-3 py-6 gap-4 lg:gap-0 lg:justify-between lg:px-[100px] lg:py-[50px]">
-                        <img class="mix-blend-multiply h-[40px] lg:h-auto" src="IMGS/H&M.png" alt="H&M">
-                        <img class="mix-blend-multiply h-[40px] lg:h-auto" src="IMGS/obey.png" alt="obey">
-                        <img class="mix-blend-multiply h-[40px] lg:h-auto" src="IMGS/shoify.png" alt="shopify">
-                        <img class="mix-blend-multiply h-[40px] lg:h-auto" src="IMGS/lacoste.png" alt="lacoste">
-                        <img class="mix-blend-multiply h-[40px] lg:h-auto" src="IMGS/levis.png" alt="levis">
-                        <img class="mix-blend-multiply h-[40px] lg:h-auto" src="IMGS/amazon.png" alt="amazon">
+        <section 
+            id="marcas"
+            class="bg-amarelo mt-4 lg:mt-[60px]"
+        >
+            <div class="flex items-center overflow-x-hidden px-3 py-6 gap-4 lg:gap-0 lg:justify-between lg:px-[100px] lg:py-[50px]">
+                <img src="IMGS/amazon.png" alt="logo 1" class="mix-blend-multiply h-[40px] lg:h-auto">
+                <img src="IMGS//levis.png" alt="logo 2" class="mix-blend-multiply h-[40px] lg:h-auto">
+                <img src="IMGS/lacoste.png" alt="logo 3" class="mix-blend-multiply h-[40px] lg:h-auto">
+                <img src="IMGS/shoify.png" alt="logo 4" class="mix-blend-multiply h-[40px] lg:h-auto">
+                <img src="IMGS/obey.png" alt="logo 5" class="mix-blend-multiply h-[40px] lg:h-auto">
+                <img src="IMGS/H&M.png" alt="logo 6" class="mix-blend-multiply h-[40px] lg:h-auto">
+            </div>
+        </section>
+
+        <section
+            id="lancamentos"
+            class="overflow-hidden mt-4 lg:mt-[70px] px-4 lg:px-[100px]"
+        >
+            <h2 class="text-[32px] lg:text-[48px] uppercase font-black relative inline-block left-1/2 lg:left-0 -translate-x-1/2 lg:-translate-x-0">
+                new arrivals
+                <img 
+                    src="imgs/detalhe.png" 
+                    alt="detalhe de texto"
+                    class="w-[100px] lg:w-auto absolute top-1/2 -right-[10px] -z-[1]"
+                >
+            </h2>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-[90px] mt-6 lg:mt-[90px]">
+                <div class="duration-200 hover:opacity-80"> <!-- card 1 -->
+                    <div class="relative">
+                        <img 
+                            src="IMGS/mulher1.png" 
+                            alt="Hoodies & Sweetshirt"
+                            class="duration-200 hover:scale-105"
+                        > <!-- imagem do card -->
+                        <img 
+                            src="IMGS/mulher2.png" 
+                            alt="Hoodies & Sweetshirt"
+                            class="absolute top-0 left-0 opacity-0 hover:opacity-100 duration-200 hover:scale-105"
+                        > <!-- imagem do card -->
+
                     </div>
-            </section>
-
-            <section id="lacamentos" class="overflow-hidden mt-4 lg:px-[100px] px-4">
-                <h2 class="text-[32px] lg:text-[48px] uppercase font-black relative inline-block left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0">new arrivals
-                    <img src="IMGS/detalhe.png" alt="detalhe de texto" class=" w-[100px] absolute top-1/2 -z-[1] -right-[10px]">
-                </h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6 lg:gap-[90px] lg:mt-[90px]">
-                    <div class="duration-200 hover:opacity-80"> <!--card 1-->
-                        <img src="IMGS/mulher1.png" alt="Hoodies & Sweetshirt" class="duration-200 hover:scale-105">
-                        <div class="flex items-center mt-6">
-                            <div class="flex-1">
-                                <h3 class="line-clamp-1 lg:text-[26px] font-semibold">Hoodies & Sweetshirt</h3>
-                                <p>Explore Now</p>
-                            </div>
-                        
-                            <div>
-                                <box-icon name='arrow-back' rotate='180' ></box-icon>
-                            </div>
+                    <div class="flex items-center mt-6"> <!-- textos card -->
+                        <div class="flex-1">
+                            <h3 class="line-clamp-1 font-semibold lg:text-[26px]">Hoodies & Sweetshirt</h3>
+                            <p>Explore now</p>
                         </div>
-                    </div>
-
-                    <div class="duration-200 hover:opacity-80"> <!--card 2-->
-                        <img src="IMGS/mulher2.png" alt="Coats & Parkas">
-                        <div class="flex items-center mt-6">
-                            <div class="flex-1">
-                                <h3 class="line-clamp-1 lg:text-[26px] font-semibold">Coats & Parkas</h3>
-                                <p>Explore Now</p>
-                            </div>
-                        
-                            <div>
-                                <box-icon name='arrow-back' rotate='180' ></box-icon>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="duration-200 hover:opacity-80"> <!--card 3-->
-                        <img src="IMGS/mulher3.png" alt="Tees & T-shirt">
-                        <div class="flex items-center mt-6">
-                            <div class="flex-1">
-                                <h3 class="line-clamp-1 lg:text-[26px] font-semibold">Tees & T-shirt</h3>
-                                <p>Explore Now</p>
-                            </div>
-                        
-                            <div>
-                                <box-icon name='arrow-back' rotate='180' ></box-icon>
-                            </div>
+                        <div>
+                            <box-icon name='arrow-back' rotate='180'></box-icon>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    </body>
+                <div class="duration-200 hover:opacity-80"> <!-- card 2 -->
+                    <img 
+                        src="IMGS/mulher2.png" 
+                        alt="Coats & Parkas"
+                        class="duration-200 hover:scale-105"
+                    > <!-- imagem do card -->
+                    <div class="flex items-center mt-6"> <!-- textos card -->
+                        <div class="flex-1">
+                            <h3 class="line-clamp-1 font-semibold lg:text-[26px]">Coats & Parkas</h3>
+                            <p>Explore now</p>
+                        </div>
+                        <div>
+                            <box-icon name='arrow-back' rotate='180'></box-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="duration-200 hover:opacity-80"> <!-- card 3 -->
+                    <img 
+                        src="IMGS/mulher3.png" 
+                        alt="Tees & T-Shirt"
+                        class="duration-200 hover:scale-105"
+                    > <!-- imagem do card -->
+                    <div class="flex items-center mt-6"> <!-- textos card -->
+                        <div class="flex-1">
+                            <h3 class="line-clamp-1 font-semibold lg:text-[26px]">Tees & T-Shirt</h3>
+                            <p>Explore now</p>
+                        </div>
+                        <div>
+                            <box-icon name='arrow-back' rotate='180'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="favoritos"
+            class="overflow-hidden mt-4 lg:mt-[70px] px-4 lg:px-[100px]"
+        >
+            <h2 class="text-[32px] lg:text-[48px] uppercase font-black relative inline-block left-1/2 lg:left-0 -translate-x-1/2 lg:-translate-x-0">
+                Young's Favourite
+                <img 
+                    src="imgs/detalhe.png" 
+                    alt="detalhe de texto"
+                    class="w-[100px] lg:w-auto absolute top-1/2 -right-[10px] -z-[1]"
+                >
+            </h2>
+            <div class="grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-[45px] mt-6 lg:mt-[90px]">
+                <div class="duration-200 hover:opacity-80"> <!-- card 1 -->
+                    <img 
+                        src="IMGS/mulher4.png" 
+                        alt="Hoodies & Sweetshirt"
+                        class="duration-200 hover:scale-105"
+                    > <!-- imagem do card -->
+                    <div class="flex items-center mt-6"> <!-- textos card -->
+                        <div class="flex-1">
+                            <h3 class="line-clamp-1 font-semibold lg:text-[26px]">Trending on instagram</h3>
+                            <p>Explore now</p>
+                        </div>
+                        <div>
+                            <box-icon name='arrow-back' rotate='180'></box-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="duration-200 hover:opacity-80"> <!-- card 2 -->
+                    <img 
+                        src="IMGS/mulher5.png" 
+                        alt="Coats & Parkas"
+                        class="duration-200 hover:scale-105"
+                    > <!-- imagem do card -->
+                    <div class="flex items-center mt-6"> <!-- textos card -->
+                        <div class="flex-1">
+                            <h3 class="line-clamp-1 font-semibold lg:text-[26px]">All Under $40</h3>
+                            <p>Explore now</p>
+                        </div>
+                        <div>
+                            <box-icon name='arrow-back' rotate='180'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a 
+            target="_blank" 
+            href="https://api.whatsapp.com/send?phone=5585987974616&text=quero%20comprar"
+            class="w-[60px] h-[60px] rounded-full bg-green-500 hover:bg-green-700 duration-200 fixed bottom-5 right-5 z-[2] flex items-center justify-center hover:scale-110">
+            <box-icon 
+            type='logo' 
+            name='whatsapp'
+            class="fill-white w-[40px] h-[40px]"
+            ></box-icon>
+        </a>
+        <div class="w-[60px] h-[60px] rounded-full bg-green-500 duration-200 fixed bottom-5 right-5 z-[1] animate-ping"></div>
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <p>fojfoegpe</p>
+</body>
 </html>
